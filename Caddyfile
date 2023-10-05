@@ -1,0 +1,18 @@
+:80 (or example.com) {
+    root * /var/www/QLevelUP
+    file_server {
+        hide .git
+        hide .gitignore
+        hide .env
+    }
+    encode gzip
+
+    log {
+        output file /path/to/file
+    }
+
+    headers {
+        ?Cache-Control "max-age:1800"
+        Server ""
+    }
+}
