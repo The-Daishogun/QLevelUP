@@ -1,4 +1,8 @@
 body {
-    background-color: black;
+    background-color: red;
     color: white;
+}
+
+img {
+    border-radius: 50%;
 }
